@@ -2,11 +2,11 @@
 """
 照片/视频批量重命名工具
 用法:
-    python3 rename_EOS_utility_names.py          # 预览模式（默认）
-    python3 rename_EOS_utility_names.py 0        # 预览模式
-    python3 rename_EOS_utility_names.py 1        # 执行模式（实际重命名）
-    python3 rename_EOS_utility_names.py dry-run  # 预览模式
-    python3 rename_EOS_utility_names.py run      # 执行模式
+    python3 rename_files_from_EOS_utility.py          # 预览模式（默认）
+    python3 rename_files_from_EOS_utility.py 0        # 预览模式
+    python3 rename_files_from_EOS_utility.py 1        # 执行模式（实际重命名）
+    python3 rename_files_from_EOS_utility.py dry-run  # 预览模式
+    python3 rename_files_from_EOS_utility.py run      # 执行模式
 """
 
 import os
@@ -56,7 +56,7 @@ def main(seq):
             mode = "preview"
         else:
             print(f"未知参数: {arg}")
-            print("用法: python3 rename_EOS_utility_names.py [0|1|preview|dry-run|run|exec]")
+            print("用法: python3 rename_files_from_EOS_utility.py [0|1|preview|dry-run|run|exec]")
             print("  0/preview/dry-run : 预览模式（只显示将执行的操作）")
             print("  1/run/exec        : 执行模式（实际重命名文件）")
             sys.exit(1)
@@ -154,9 +154,9 @@ def main(seq):
         print("\n重命名完成，文件修改时间已恢复")
     else:
         print("\n预览模式完成。要实际执行重命名，请运行:")
-        print("  python3 rename_EOS_utility_names.py 1")
+        print("  python3 rename_files_from_EOS_utility.py 1")
         print("或")
-        print("  python3 rename_EOS_utility_names.py run")
+        print("  python3 rename_files_from_EOS_utility.py run")
 
 
 if __name__ == "__main__":

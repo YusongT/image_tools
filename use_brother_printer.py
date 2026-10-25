@@ -5,7 +5,7 @@
 # python3 use_brother_printer.py A3 0 1432
 # 0 means dryrun
 
-from brother_printer_funcs import *
+from helper_functions_brother_printer import *
 import sys
 
 
@@ -13,7 +13,7 @@ inD="/Users/ytian/Pictures/test"
 # only consider file names that cointain <name_pattern>
 # this can be used to filter target file series
 #name_pattern=""
-name_pattern="2012"
+name_pattern=""
 
 name_suffix=".jpeg"
 

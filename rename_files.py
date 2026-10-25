@@ -1,12 +1,15 @@
 import os
 import sys
 
-parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, parent_dir)
-from code.helper_funcs_files_YT import order_files
-from code.helper_funcs_files_YT import find_hidden_files
-from code.helper_funcs_files_YT import remove_files
-from code.helper_funcs_files_YT import rename_list_of_files
+from helper_functions_YT.helper_functions_files_YT import order_files
+from helper_functions_YT.helper_functions_files_YT import find_hidden_files
+from helper_functions_YT.helper_functions_files_YT import remove_files
+from helper_functions_YT.helper_functions_files_YT import rename_list_of_files
+
+# usage: 
+# python3 rename_files.py remove_hidden 0
+# python3 rename_files.py space 0
+# python3 rename_files.py replace_name 0 IMGL IMG_
 
 
 

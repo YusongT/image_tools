@@ -1,10 +1,9 @@
 # usage: python3 change_date_time.py 0
 import sys
 import os
-parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, parent_dir)
-from code.helper_funcs_files_YT import add_path
-from code.helper_funcs_files_YT import order_files
+
+from helper_functions_YT.helper_functions_files_YT import add_path
+from helper_functions_YT.helper_functions_files_YT import order_files
 
 # ------ ------ commands ------ ------
 # to check all time status of photos:

@@ -1,9 +1,7 @@
 import sys
 import os
 
-parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, parent_dir)
-from code.helper_funcs_files_YT import *
+from helper_functions_YT.helper_functions_files_YT import *
 
 
 
